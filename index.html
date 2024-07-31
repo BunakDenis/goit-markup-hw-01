@@ -1,0 +1,89 @@
+<!-- ToDo
+1. Разобраться с ориентацией шрифта в списке и адресе (ориентация шрифта)
+2. У хедера есть отступ от верха страницы
+3. Емейл и телефон не вытрастраиваються в строку
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      header {
+        background-color: #e7e9fc;
+        margin: 0;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .logo {
+        margin-left: 154px;
+        margin-top: 24px;
+      }
+      .main_menu {
+        margin-left: 193px;
+        margin-top: 24px;
+      }
+      .main_links {
+        font: "Roboto";
+        font-size: 16px;
+        color: #2e2f42;
+        display: inline-block;
+        padding-left: 88px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .header_contact_info {
+        margin-left: 593px;
+        margin-top: 24px;
+        display: inline-block;
+      }
+      address {
+        font: "Roboto";
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <header>
+    <section class="header">
+      <div class="logo">
+        <a href="/" target="_blank">
+          <img
+            src="https://webstudionorthwales.co.uk/wp-content/uploads/2016/12/Web-Design-North-Wales-Logo.png"
+            alt="logo"
+            width="115"
+            height="24"
+          />
+        </a>
+      </div>
+      <div class="main_menu">
+        <nav>
+          <ul>
+            <li class="main_links">
+              <a href="">Studio</a>
+            </li>
+            <li class="main_links">
+              <a href="">Portfolio</a>
+            </li>
+            <li class="main_links">
+              <a href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header_contact_info">
+        <div>
+          <address>info@devstudio.com</address>
+        </div>
+        <div>
+          <address>+11 (000) 111-11-11</address>
+        </div>
+      </div>
+    </section>
+  </header>
+  <body></body>
+</html>
