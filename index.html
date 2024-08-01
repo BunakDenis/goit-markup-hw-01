@@ -8,11 +8,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/jpg" />
     <style type="text/css">
       header {
         background-color: #e7e9fc;
         margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
       }
       .header {
         display: flex;
@@ -24,27 +30,82 @@
         margin-top: 24px;
       }
       .main_menu {
-        margin-left: 193px;
+        margin-left: 105px;
         margin-top: 24px;
       }
       .main_links {
         font: "Roboto";
         font-size: 16px;
+        font-weight: 500;
         color: #2e2f42;
         display: inline-block;
-        padding-left: 88px;
+        margin-left: 88px;
       }
       a {
         text-decoration: none;
       }
       .header_contact_info {
-        margin-left: 593px;
+        margin-left: 505px;
         margin-top: 24px;
-        display: inline-block;
       }
-      address {
+      .header_contact_info_pargraf {
         font: "Roboto";
         font-size: 16px;
+        display: inline-block;
+        margin-left: 88px;
+      }
+      .order_service {
+        height: 600px;
+        background-color: #2e2f42;
+      }
+      .order_service_text {
+        padding-top: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      section.order_service p {
+        text-align: center;
+        color: white;
+        font: "Roboto";
+        font-size: 56px;
+        font-weight: bold;
+        height: 120px;
+        width: 496px;
+        margin: 0;
+        padding: 0;
+      }
+      section.order_service button {
+        display: block;
+        margin: 40px auto;
+        background-color: #4d5ae5;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font: "Roboto";
+        font-size: 16px;
+        font-weight: 500;
+        height: 56px;
+        width: 169px;
+      }
+      .features {
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .features_block {
+        display: grid;
+        grid-template-columns: 264px 264px 264px 264px;
+        column-gap: 24px;
+        margin: auto;
+        width: 1128px;
+        height: 104px;
+        padding-left: 24px;
+      }
+      section.features div h2 {
+        font: "Roboto";
+        font-size: 20px;
       }
     </style>
   </head>
@@ -76,14 +137,49 @@
         </nav>
       </div>
       <div class="header_contact_info">
-        <div>
-          <address>info@devstudio.com</address>
-        </div>
-        <div>
-          <address>+11 (000) 111-11-11</address>
-        </div>
+        <p class="header_contact_info_pargraf">info@devstudio.com</p>
+        <p class="header_contact_info_pargraf">+11 (000) 111-11-11</p>
       </div>
     </section>
   </header>
-  <body></body>
+  <body>
+    <section class="order_service">
+      <div class="order_service_text">
+        <p>Effective Solutions for Your Business</p>
+      </div>
+      <button type="button">Order Service</button>
+    </section>
+    <section class="features">
+      <div class="features_block">
+        <div class="feature1">
+          <h2>Strategy</h2>
+          <p>
+            Our goal is to identify the business problem to walk away with the
+            perfect and creative solution.
+          </p>
+        </div>
+        <div class="feature2">
+          <h2>Punctuality</h2>
+          <p>
+            Bring the key message to the brand's audience for the best price
+            within the shortest possible time.
+          </p>
+        </div>
+        <div class="feature3">
+          <h2>Diligence</h2>
+          <p>
+            Research and confirm brands that present the strongest digital
+            growth opportunities and minimize risk.
+          </p>
+        </div>
+        <div class="feature4">
+          <h2>Technologies</h2>
+          <p>
+            Design practice focused on digital experiences. We bring forth a
+            deep passion for problem-solving.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
